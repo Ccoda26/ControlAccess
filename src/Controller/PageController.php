@@ -22,13 +22,16 @@ class PageController
     }
 
     /**
-     * @Route("/koala", name="page_poker")
+     * @Route("/koala", name="page_name")                               // nouvelle route koala
      */
     public function recupere(Request $request){
-        $firstname =  $request->query->get('prenom');
-        $lastname =  $request->query->get('nom');
+        $firstname =  $request->query->get('prenom');               // recupere prenom
+        $lastname =  $request->query->get('nom');                   // recupere nom
 
         $response = new Response( '<p> Bonjour ' . $firstname . ' ' . $lastname . ' </p> ');
+
+            // affiche Bonjour nom prenom dans une balises p d'html
+
             return $response;
     }
 }
