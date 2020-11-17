@@ -28,10 +28,33 @@ class PageController
         $firstname =  $request->query->get('prenom');               // recupere prenom
         $lastname =  $request->query->get('nom');                   // recupere nom
 
-        $response = new Response( '<p> Bonjour ' . $firstname . ' ' . $lastname . ' </p> ');
+        $response = new Response( "<p> Bonjour $firstname $lastname </p> ");
 
             // affiche Bonjour nom prenom dans une balises p d'html
 
             return $response;
     }
+
+    /**
+     * @Route("/table", name="page_table")                               // nouvelle route koala
+     */
+    public function Associe(Request $request){
+
+       $table = [
+         '1'  => 'table 1',
+         '2'  => 'table 2',
+         '3'  => 'table 3',
+         '4'  => 'table 4',
+         '5'  => 'table 5',
+         '6'  => 'table 6'
+        ];
+        $MonId =  $request->query->get('id');
+
+
+        $response = new Response($table[$MonId]);
+        return $response;
+
+
+    }
+
 }
