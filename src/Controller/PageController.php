@@ -36,9 +36,9 @@ class PageController
     }
 
     /**
-     * @Route("/table", name="page_table")                               // nouvelle route koala
+     * @Route("/table/{id}", name="page_table")                               // nouvelle route koala
      */
-    public function Associe(Request $request){
+    public function Associe(Request $request, $id){
 
        $table = [
          '1'  => 'table 1',
@@ -48,10 +48,8 @@ class PageController
          '5'  => 'table 5',
          '6'  => 'table 6'
         ];
-        $MonId =  $request->query->get('id');
 
-
-        $response = new Response($table[$MonId]);
+        $response = new Response($table[$id]);
         return $response;
 
 
