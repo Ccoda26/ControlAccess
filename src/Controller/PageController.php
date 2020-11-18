@@ -11,6 +11,7 @@ class PageController extends  AbstractController
 {
 
     /**
+     * J'appelle ma WILDCARD pour mon acceuil
      * @Route ("/", name="home")
      */
 public function acceuil(){
@@ -20,6 +21,7 @@ public function acceuil(){
 
 
     /**
+     * J'appelle ma WILDCARD
      * @Route("/poker", name="page_poker")
      */
     public function age(Request $request){                   // request est associé utilisé pour récupéré info
@@ -33,6 +35,7 @@ public function acceuil(){
     }
 
     /**
+     * J'appelle ma WILDCARD
      * @Route("/koala", name="page_name")                               // nouvelle route koala
      */
     public function recupere(Request $request){
@@ -42,12 +45,13 @@ public function acceuil(){
         $response = new Response( "<p> Bonjour $firstname $lastname </p> ");
 
             // affiche Bonjour nom prenom dans une balises p d'html
-
             return $response;
     }
 
     /**
-     * @Route("/table/{id}/{name}/{age}", name="page_table")               */
+     *   J'appelle ma WILDCARD
+     * @Route("/table/{id}/{name}/{age}", name="page_table")
+     */
     public function Associe($id, $name, $age){
 
        $articles = [
@@ -94,4 +98,22 @@ public function acceuil(){
      // render permet d'aller appeller la page twig composer d'html donc plus de mélange html/php
 }
 }
+
+    /**
+     * @Route ("/lafin", name="page_vers_twig")
+     */
+
+        public  function TransmissionInfo(){
+            $profile = [
+                "firstname" => "Flantier",
+                "name" => "Noel",
+                "age" => 40,
+                "job" => "secret agent",
+                "active" => false
+            ];
+
+            return $this->render( 'article.html.twig',[
+            'profile' => $profile
+                ]);
+        }
 }
