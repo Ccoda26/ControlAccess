@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="ang">
+<head>
+    <meta charset="UTF-8">
+    <title>{% block title %}Welcome!{% endblock %}</title>
+    {% block stylesheets %}{% endblock %}
+</head>
+<body>
+<h1>Bonjour {{ name }}</h1>
+<h2>Voici l'{{ article }}</h2>
+
+{% if age  >= 18 %}
+    <p>Bienvenue tu es majeur, tu as {{ age }} ans</p>
+{% else %}
+    <p>Dommage tu n'as pas encore l'age légal de ton pays, tu n'as que {{ age }} ans</p>
+{% endif %}
+<!-- endif obligatoire pour terminer une condition en twig-->
+</body>
+</html>

@@ -47,8 +47,7 @@ public function acceuil(){
     }
 
     /**
-     * @Route("/table/{id}/{name}/{age}", name="page_table")                               // nouvelle route koala
-     */
+     * @Route("/table/{id}/{name}/{age}", name="page_table")               */
     public function Associe($id, $name, $age){
 
        $articles = [
@@ -65,8 +64,8 @@ public function acceuil(){
 
         $article = $articles[$id];
 
-        return $this->render('base.html.twig',[
-            'article'=> $article,
+        return $this->render('article.html.twig',[        //permet l communication entre les deux fichier donc melange html -> php
+            'article'=> $article,                           //les données que l'on envoie a twig entre{{ }}
             'name' => $name,
             'age' => $age,
         ]);
