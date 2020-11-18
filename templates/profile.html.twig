@@ -7,14 +7,14 @@
 <body>
 
     <h1>Les intervenants sont :</h1>
-    {% for key in agents|keys %}
-        {% if agents[key].published %}
+        {% for agent in agents %}
+        {% if agent.published %}
             <ul>
                 <li>
                     <span>
-                        {{ agents[key].firstName }}
-                        {{ agents[key].lastName }}
-                        {{ agents[key].age }}
+                        {{ agent.firstName }}
+                        {{ agent.lastName }}
+                        {{ agent.age }}
                      </span>
                 </li>
             </ul>
