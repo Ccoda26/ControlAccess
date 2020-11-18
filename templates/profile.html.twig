@@ -5,11 +5,22 @@
     <title>Le Fameux Profile</title>
 </head>
 <body>
-<ol>
-    {% for qualite in skills %}
-        <li>{{ qualite }}</li>
+
+    <h1>Les intervenants sont :</h1>
+    {% for key in agents|keys %}
+        {% if agents[key].published %}
+            <ul>
+                <li>
+                    <span>
+                        {{ agents[key].firstName }}
+                        {{ agents[key].lastName }}
+                        {{ agents[key].age }}
+                     </span>
+                </li>
+            </ul>
+        {% endif %}
     {% endfor %}
 
-</ol>
+
 </body>
 </html>
