@@ -20,9 +20,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="7238fce8-75ce-4eb9-84b1-cabf6307b86d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controller/profileControler.php" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/templates/profile.html.twig" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controller/PageController.php" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controller/PageController.php" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/templates/article.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/article.html.twig" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/templates/base.html.twig" beforeDir="false" afterPath="$PROJECT_DIR$/templates/base.html.twig" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -170,7 +173,7 @@
       <option name="presentableId" value="Default" />
       <updated>1605534688751</updated>
       <workItem from="1605534689876" duration="3346000" />
-      <workItem from="1605540642812" duration="19349000" />
+      <workItem from="1605540642812" duration="23588000" />
     </task>
     <servers />
   </component>
@@ -189,6 +192,10 @@
     </option>
   </component>
   <component name="WindowStateProjectService">
+    <state x="498" y="166" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog" timestamp="1605708901876">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="498" y="166" key="#com.jetbrains.php.actions.copyPaste.importReferences.PhpImportReferencesDialog/0.0.1536.824@0.0.1536.824" timestamp="1605708901876" />
     <state x="549" y="154" key="FileChooserDialogImpl" timestamp="1605605980996">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
@@ -197,13 +204,13 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="640" y="310" key="Github.ShareDialog/0.0.1536.824@0.0.1536.824" timestamp="1605536706769" />
-    <state x="558" y="135" key="NewPhpClassDialog" timestamp="1605534723217">
+    <state x="558" y="135" key="NewPhpClassDialog" timestamp="1605708058678">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="558" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1605534723217" />
-    <state x="277" y="57" key="SettingsEditor" timestamp="1605693828565">
+    <state x="558" y="135" key="NewPhpClassDialog/0.0.1536.824@0.0.1536.824" timestamp="1605708058678" />
+    <state x="277" y="57" key="SettingsEditor" timestamp="1605706994050">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605693828565" />
+    <state x="277" y="57" key="SettingsEditor/0.0.1536.824@0.0.1536.824" timestamp="1605706994050" />
   </component>
 </project>

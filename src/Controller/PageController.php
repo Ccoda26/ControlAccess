@@ -99,9 +99,9 @@ public function acceuil(){
 }
 }
 
-    /**
-     * @Route ("/lafin", name="page_vers_twig")
-     */
+        /**
+         * @Route ("/lafin", name="page_vers_twig")
+         */
 
         public  function TransmissionInfo(){
             $profile = [
@@ -109,11 +109,11 @@ public function acceuil(){
                 "name" => "Noel",
                 "age" => 40,
                 "job" => "secret agent",
-                "active" => false
+                "active" => true
             ];
 
             return $this->render( 'article.html.twig',[
-            'profile' => $profile
-                ]);
+                'profile' => $profile
+            ]);
         }
 }
