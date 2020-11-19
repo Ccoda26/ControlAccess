@@ -8,19 +8,19 @@
 
     <h1>Les intervenants sont :</h1>
         {% for agent in agents %}
-        {% if agent.published %}
-            <ul>
-                <li>
-                    <span>
-                        {{ agent.firstName }}
-                        {{ agent.lastName }}
-                        {{ agent.age }}
-                     </span>
-                </li>
-            </ul>
-        {% endif %}
-    {% endfor %}
-
+            {% if agent.published %}
+                <ul>
+                    <li>
+                        <span>
+                         <a href="{{ path('agent_show', {id:agent.id}) }}">
+                            {{ agent.firstName }}
+                            {{ agent.lastName }}
+                         </a>
+                        </span>
+                    </li>
+                </ul>
+            {% endif %}
+        {% endfor %}
 
 </body>
 </html>
